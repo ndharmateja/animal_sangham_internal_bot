@@ -1,0 +1,16 @@
+{
+  "name": "animal_sangham_internal_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run tsc && node build/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "lint": "eslint --ext .ts .",
+    "clean": "rm -rf build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
