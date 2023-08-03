@@ -25,5 +25,5 @@
     "axios": "^1.4.0",
     "telegraph": "^0.8.22",
     "xlsx": "^0.18.5"
-  }
+  "type": "module"
 }
