@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/dotenv": "^8.2.0",
     "@types/xlsx": "^0.0.36",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
@@ -23,7 +24,9 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
     "telegraph": "^0.8.22",
     "xlsx": "^0.18.5"
+  },
   "type": "module"
 }
