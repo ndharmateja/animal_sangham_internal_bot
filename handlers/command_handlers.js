@@ -1,6 +1,6 @@
 import { require } from "../utils/utils.js";
 const fs = require("fs").promises;
-import { XLS_MIME_TYPE } from "../utils/constants.js";
+import { XLS_MIME_TYPE, XLS_MIME_TYPE_MOBILE } from "../utils/constants.js";
 import {
   getCsvFileName,
   getCsvStringFromXls,
@@ -29,7 +29,7 @@ export const documentHandler = async (ctx) => {
 
 const saveXlsDocumentAsCsv = async (xlsFileName, mimeType, fileId) => {
   // Check mime type
-  if (mimeType !== XLS_MIME_TYPE) {
+  if (mimeType !== XLS_MIME_TYPE && mimeType !== XLS_MIME_TYPE_MOBILE) {
     throw new Error("Only xls documents accepted for now.");
   }
 
