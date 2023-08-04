@@ -99,7 +99,7 @@ export const getReplyMessage = (filteredCsvLines) => {
   } else {
     for (let i = 0; i < depositTransactions.length; i++) {
       const { desc, deposit } = depositTransactions[i];
-      message += `${i + 1}. ${deposit.toFixed(2)}/- ${desc}\n`;
+      message += `${i + 1}. ${deposit.toFixed(2)}/- (${desc}\n`;
     }
   }
   message += "\n";
@@ -111,7 +111,7 @@ export const getReplyMessage = (filteredCsvLines) => {
   } else {
     for (let i = 0; i < withdrawalTransactions.length; i++) {
       const { desc, withdrawal } = withdrawalTransactions[i];
-      message += `${i + 1}. ${withdrawal.toFixed(2)}/- ${desc}\n`;
+      message += `${i + 1}. ${withdrawal.toFixed(2)}/- (${desc})\n`;
     }
   }
   message += "\n";
