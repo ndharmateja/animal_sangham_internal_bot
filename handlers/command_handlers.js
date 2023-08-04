@@ -10,6 +10,11 @@ import {
   getReplyMessage,
 } from "../utils/document_handler_utils.js";
 
+export const startHandler = (ctx) =>
+  ctx.reply(
+    "Download statement from HDFC App in 'XLS' format and send that document as a message here to get today's summary"
+  );
+
 export const documentHandler = async (ctx) => {
   try {
     const {
