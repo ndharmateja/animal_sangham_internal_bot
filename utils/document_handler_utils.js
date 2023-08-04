@@ -91,7 +91,7 @@ export const getReplyMessage = (filteredCsvLines) => {
     transactionObjs.push({ date, desc, refNum, withdrawal, deposit });
   }
 
-  let message = `Summary for ${today}:\n\n`;
+  let message = `Summary for ${today}\n\n`;
   const depositTransactions = transactionObjs.filter((o) => o.withdrawal === 0);
   message += "Deposits:\n";
   if (depositTransactions.length === 0) {
