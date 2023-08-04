@@ -21,7 +21,6 @@ export const documentHandler = async (ctx) => {
       document: { file_name: fileName, mime_type: mimeType, file_id: fileId },
     } = ctx.message;
     const replyMessage = await saveXlsDocumentAsCsv(fileName, mimeType, fileId);
-    console.log("to reply: " + replyMessage);
     ctx.reply(replyMessage);
   } catch (error) {
     ctx.reply(`Error: ${error.message}`);
